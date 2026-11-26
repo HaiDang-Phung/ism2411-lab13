@@ -20,3 +20,8 @@ print("\n--- EXERCISE 4 ---")
 big_south = df[(df['region'] == 'South') & (df['revenue'] > 1000)]
 print("Big South row count:", len(big_south))
 print(big_south.head())
+# EXERCISE 5: A new column
+print("\n--- EXERCISE 5 ---")
+df['per_unit'] = df['revenue'] / df['quantity']
+print(df.head())
+print("Mean per-unit price:", df['per_unit'].mean())
