@@ -4,5 +4,5 @@
 
 ## Command to run
 ```bash
-python3 explore.py
+python3 ism2411-lab13/explore.py
 ```
