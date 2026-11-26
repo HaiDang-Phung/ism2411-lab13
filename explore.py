@@ -29,3 +29,7 @@ print("Mean per-unit price:", df['per_unit'].mean())
 print("\n--- EXERCISE 6 ---")
 print("Unique regions:", df['region'].unique())
 print("Region value counts:\n", df['region'].value_counts())
+# EXERCISE 7: Select columns
+print("\n--- EXERCISE 7 ---")
+subset_df = df[['region', 'product', 'revenue']]
+print("Subset shape:", subset_df.shape)
