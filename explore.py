@@ -33,3 +33,7 @@ print("Region value counts:\n", df['region'].value_counts())
 print("\n--- EXERCISE 7 ---")
 subset_df = df[['region', 'product', 'revenue']]
 print("Subset shape:", subset_df.shape)
+# EXERCISE 8: Save
+print("\n--- EXERCISE 8 ---")
+df.to_csv('data/explored.csv', index=False)
+print("Saved data/explored.csv successfully!")
