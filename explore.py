@@ -25,3 +25,7 @@ print("\n--- EXERCISE 5 ---")
 df['per_unit'] = df['revenue'] / df['quantity']
 print(df.head())
 print("Mean per-unit price:", df['per_unit'].mean())
+# EXERCISE 6: Unique values
+print("\n--- EXERCISE 6 ---")
+print("Unique regions:", df['region'].unique())
+print("Region value counts:\n", df['region'].value_counts())
