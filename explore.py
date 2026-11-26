@@ -15,3 +15,8 @@ print(south.head())
 print("\n--- EXERCISE 3 ---")
 top_5_revenue = df.sort_values('revenue', ascending=False).head(5)
 print(top_5_revenue)
+# EXERCISE 4: Two-condition filter
+print("\n--- EXERCISE 4 ---")
+big_south = df[(df['region'] == 'South') & (df['revenue'] > 1000)]
+print("Big South row count:", len(big_south))
+print(big_south.head())
