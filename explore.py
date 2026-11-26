@@ -1,3 +1,14 @@
+"""
+## Reflection
+1. Without looking at your code, can you explain what a boolean filter does in plain English? Practice saying it out loud.
+A boolean filter tests every row against a True/False condition and keeps only the rows that evaluate to True.
+
+2. What is the difference between df["revenue"] and df[["revenue"]]? When does the distinction matter?
+df["revenue"] returns a 1D Series, while df[["revenue"]] returns a 2D DataFrame. It matters when selecting multiple columns or passing data to functions and models that require a 2D table.
+
+3. If a colleague who only knows Excel asked you to explain why you would choose pandas for this task, what is the single most compelling reason you would give?
+Because I prioritize automation, I only need to write the script once and can re-run it on new files in seconds without manual clicking or altering the raw data.
+"""
 import pandas as pd
 # EXERCISE 1: Load it
 df = pd.read_csv('data/retail_sales.csv')
