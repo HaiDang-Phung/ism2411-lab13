@@ -11,3 +11,7 @@ print("\n--- EXERCISE 2 ---")
 south = df[df['region'] == 'South']
 print("South row count:", len(south))
 print(south.head())
+# EXERCISE 3: Top 5 by revenue
+print("\n--- EXERCISE 3 ---")
+top_5_revenue = df.sort_values('revenue', ascending=False).head(5)
+print(top_5_revenue)
